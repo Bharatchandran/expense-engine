@@ -10,10 +10,10 @@ Expense Engine (formerly EmiTracker) is a beautifully designed, containerized we
 
 ## 🌟 Features
 
-- **Premium UI**: Dark mode dashboard featuring glassmorphism design, colorful gradients, and smooth interactive elements.
+- **Modern React Frontend**: Built with Vite, React 18, and styled with Tailwind CSS and Shadcn UI components for a premium, accessible dark mode experience.
 - **Advanced EMI Tracking**: Input your starting date OR your manual completed months. The application dynamically calculates your remaining balance, completed tenure, and total amount paid.
 - **Batch Payments**: A dedicated Batch Pay modal to increment multiple loans with a single click.
-- **Offline Fallback**: Even if your PostgreSQL backend container goes down, the frontend seamlessly cascades to browser `localStorage` to keep your progress tracked.
+- **Offline Fallback**: Even if your PostgreSQL backend container goes down, the React frontend seamlessly cascades to browser `localStorage` to keep your progress tracked.
 - **Fully Dockerized**: Spins up the entire Java backend and PostgreSQL database with a single Docker command.
 
 
@@ -58,8 +58,8 @@ Because the application is fully containerized, setting up Expense Engine on you
 
 - **Backend:** Java 17, Spring Boot 3, Spring Data JPA, Hibernate.
 - **Database:** PostgreSQL 16 (Running via Docker).
-- **Frontend:** HTML5, Vanilla JavaScript, CSS3 (No heavy frontend frameworks, strictly lightweight and fast).
-- **Infrastructure:** Docker, Docker Compose, multi-stage Docker builds.
+- **Frontend:** React 18, Vite, Tailwind CSS, Shadcn UI Primitives.
+- **Infrastructure:** Docker, Docker Compose, multi-stage Docker builds (Node 20 -> Maven -> JRE).
 
 ## 🗺 Roadmap
 
